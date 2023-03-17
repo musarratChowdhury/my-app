@@ -1,0 +1,11 @@
+<div class="vocubularies-list">
+  <div class="vocubulary" *ngFor="let vocub of vocubularies; let i = index">
+    <div class="id">{{ i }}</div>
+    <div class="word">{{ vocub.word }}</div>
+    <div class="meaning">{{ vocub.meaning }}</div>
+    <div class="sentence">{{ vocub.sentence }}</div>
+    <div class="creationDate">{{ vocub.creationDate }}</div>
+    <div class="memoryLevel">{{ vocub.memoryLevel }}</div>
+    <button class="delete">Delete</button>
+  </div>
+</div>

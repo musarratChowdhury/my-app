@@ -1,0 +1,24 @@
+<!-- <button mat-raised-button>Click Me</button>
+<mat-slide-toggle>toggle me</mat-slide-toggle> -->
+<mat-card>
+  <mat-card-header> Login </mat-card-header>
+  <mat-card-content>
+    <form #form="ngForm" (ngSubmit)="LoginUser()">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input
+          name="emailAddress"
+          [(ngModel)]="LoginModel.emailAddress"
+          matInput
+        />
+      </mat-form-field>
+      <br />
+      <mat-form-field>
+        <mat-label>PassWord</mat-label>
+        <input name="password" [(ngModel)]="LoginModel.password" matInput />
+      </mat-form-field>
+      <input type="submit" value="Submit" mat-raised-button />
+    </form>
+  </mat-card-content>
+  <mat-card-footer> </mat-card-footer>
+</mat-card>

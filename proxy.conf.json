@@ -1,0 +1,8 @@
+{
+  "/api/v1/*": {
+    "target": "https://vocubapi.azurewebsites.net/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
